@@ -1,5 +1,5 @@
 def mined_minds(number)
-	1
+	number 
 end
 
 
