@@ -20,5 +20,11 @@ class HWTestMinedMindsFunction < Minitest::Test
 
 	def test_3_returns_Mined
 		assert_equal("Mined", mined_minds(3))
+	end
+	
+	def test_5_returns_Minds
+		assert_equal("Minds", mined_minds(5))
 	end	
+
+
 end
