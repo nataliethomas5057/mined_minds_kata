@@ -34,7 +34,11 @@ class TestSubtractionFunction < Minitest::Test
 end	
 
 class TestDivisionFunction < Minitest::Test
-	def test_3_times_2
-		assert_equal(6, divide(3, 2))
+	def test_6_divided_by_2
+		assert_equal(3, divide(6, 2))
 	end
+	
+
+
+
 end			
