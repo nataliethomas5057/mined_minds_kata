@@ -1,5 +1,11 @@
-def add (number, number2, number3)
-		number + number2 + number3
-end	
+def add (*numbers)
+	sum = 0
+	numbers.each do |number| #variable number to assign to each item in array
+		sum = sum + number
+	end	
+	sum
+	
+
+end
 
 
