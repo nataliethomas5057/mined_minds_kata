@@ -40,7 +40,9 @@ class TestDivisionFunction < Minitest::Test
 	def test_decimals
 		assert_equal(1.57, divide(3.14, 2))
 	end	
-
+	def divide_by_zero_returns_infinity
+		assert_equal("Infinity", divide(2, 0))
+	end	
 
 
 end			
