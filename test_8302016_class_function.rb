@@ -38,7 +38,7 @@ class TestDivisionFunction < Minitest::Test
 		assert_equal(3, divide(6, 2))
 	end
 	def test_decimals
-		assert_equal(1.8, divide(3.14, 2))
+		assert_equal(1.57, divide(3.14, 2))
 	end	
 
 
