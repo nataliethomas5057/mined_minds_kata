@@ -25,6 +25,9 @@ class TestAdditionFunction < Minitest::Test
 	def test_1_plus_1_plus_1
 		assert_equal(3, add(1, 1, 1))
 	end	
+	def test_0_plus_neg5_plus_3_plus_1
+		assert_equal(-1, add(0,-5, 3, 1))
+	end
 end
 
 class TestSubtractionFunction < Minitest::Test
