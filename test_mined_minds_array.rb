@@ -9,12 +9,14 @@ class TestArrayFunction < Minitest::Test
 	def test_15_is_MinedMinds
 		result = mm_array()
 		assert_equal("MinedMinds", mm_array[14])	
-	end			
-
-
-
-
-
-
+	end	
+	def test_3_is_Mined
+		result = mm_array()
+		assert_equal("Mined", mm_array[2])	
+	end
+	def test_15_is_Minds	
+		result = mm_array()
+		assert_equal("Minds", mm_array[4])	
+	end
 
 end	
