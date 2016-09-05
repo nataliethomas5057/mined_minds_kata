@@ -6,4 +6,15 @@ class TestArrayFunction < Minitest::Test
 		result = mm_array()
 		assert_equal(1, mm_array[0])
 	end
+	def test_15_is_MinedMinds
+		result = mm_array()
+		assert_equal("MinedMinds", mm_array[14])	
+	end			
+
+
+
+
+
+
+
 end	
