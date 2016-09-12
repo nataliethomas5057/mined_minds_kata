@@ -31,7 +31,7 @@ def off_by_one_number?(intersection)
 
 
 
-		intersection = (my_ticket && winning_ticket)
+		intersection = my_ticket && winning_ticket
 		if intersection.length >= 3
 			puts "true"
 		else 
