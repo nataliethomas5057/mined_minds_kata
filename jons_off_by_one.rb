@@ -10,3 +10,7 @@ def off_by_one?(ticket_1, ticket_2)
 	end	
 	dont_match == 1
 end
+
+def find_tickets_one_off(my_ticket, winning_tickets)
+	tickets_one_off = []
+end	
