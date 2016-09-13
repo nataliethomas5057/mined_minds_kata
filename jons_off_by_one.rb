@@ -1,20 +1,12 @@
 def off_by_one?(ticket_1, ticket_2)
 	dont_match = 0
-	if ticket_1[0] != ticket_2[0]
-		dont_match += 1
+	index_position = 0
+
+	4.times do 
+		if ticket_1[index_position] != ticket_2[index_position]
+			dont_match += 1
+		end	
+		index_position += 1
 	end	
-	if ticket_1[1] != ticket_2[1]
-		dont_match += 1
-	end
-	if ticket_1[2] != ticket_2[2]
-		dont_match += 1
-	end
-	if ticket_1[3] != ticket_2[3]
-		dont_match += 1
-	end
-	if dont_match == 1	#OR YOU CAN WRITE  dont_match == 1 ? true : false
-		true
-	else
-		false
-	end		
+	dont_match == 1
 end
