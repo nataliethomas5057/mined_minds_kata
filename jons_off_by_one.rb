@@ -12,7 +12,7 @@ def off_by_one?(ticket_1, ticket_2)
 	if ticket_1[3] != ticket_2[3]
 		dont_match += 1
 	end
-	if dont_match == 1
+	if dont_match == 1	#OR YOU CAN WRITE  dont_match == 1 ? true : false
 		true
 	else
 		false
