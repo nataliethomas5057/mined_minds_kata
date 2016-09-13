@@ -20,7 +20,7 @@ class TestTicketsOffByOne <Minitest::Test
 	#an array containing winning tix (also as strings.) The function should 
 	#RETURN an array containing any winning tickets that is off by 1 from 
 	#your number
-	def test_returns_tix_off_by_1
+	def test_no_winning_tix_returns_empty_array
 		my_ticket = "1234"
 		winning_tickets = []
 		assert_equal([], find_tickets_one_off(my_ticket, winning_tickets))
