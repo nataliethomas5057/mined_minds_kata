@@ -14,6 +14,11 @@ class TestWinningNumbers < Minitest::Test
 		my_ticket = "1234"
 		winning_tickets = ["6895", "7777", "5552"]
 		assert_equal([], find_winners(my_ticket, winning_tickets))
-	end	
+	end
+	def test_return_array_with_winning_ticket_with_single_match
+		my_ticket = "1234"
+		winning_tickets =["1234"]
+		assert_equal(["1234"],find_winners(my_ticket, winning_tickets))
+		end	
 end		
 
