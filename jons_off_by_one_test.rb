@@ -25,4 +25,9 @@ class TestTicketsOffByOne <Minitest::Test
 		winning_tickets = []
 		assert_equal([], find_tickets_one_off(my_ticket, winning_tickets))
 	end
+	def test_no_matches_returns_empty_array
+		my_ticket = "1234"
+		winning_tickets = ["6895", "7777", "5552"]
+		assert_equal([], find_tickets_one_off(my_ticket, winning_tickets))
+	end	
 end		
