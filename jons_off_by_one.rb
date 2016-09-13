@@ -13,11 +13,10 @@ end
 
 def find_tickets_one_off(my_ticket, winning_tickets)
 	tickets_one_off = []
-	winning_tickets.each do |winning_ticket| #make singular here, (can actually name it whatever I want)looks at each item in the array called winningtickets, (iterates!), and we calle ach winningticket
-	if winning_ticket == my_ticket
-		tickets_one_off << my_ticket
-	end
-	tickets_one_off
+	winning_tickets.each do |winning_ticket| 
+		if off_by_one?(my_ticket, winning_ticket)
+		tickets_one_off << winning_ticket
+		end
 	end	
-	off_by_one?(my_ticket, winning_tickets)
+	tickets_one_off
 end	
